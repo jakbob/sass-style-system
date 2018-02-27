@@ -1,7 +1,10 @@
 @import "../node_modules/normalize-scss/sass/normalize/_import-now.scss";
 
+@import "main";
+
 body {
     font-family: sans-serif;
+    color: app-color(text);
 }
 
 .color-grid {
