@@ -1,0 +1,26 @@
+{
+  "name": "sass-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "styles/main.scss",
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  },
+  "scripts": {
+    "build": "node-sass --output build --source-map true styles",
+    "watch": "npm run build -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakbob/sass-starter.git"
+  },
+  "author": "Jakob Florell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jakbob/sass-starter/issues"
+  },
+  "homepage": "https://github.com/jakbob/sass-starter#readme"
+}
