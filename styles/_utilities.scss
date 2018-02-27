@@ -3,3 +3,19 @@
 @each $name, $color in $colors {
     .u-color--#{$name} { color: $color !important; }
 }
+
+@each $name, $size in $font-sizes {
+    .u-font-size--#{$name} { font-size: $size !important; }
+}
+
+@each $name, $size in $spacings {
+    .u-margin-top--#{$name} { margin-top: $size !important; }
+    .u-margin-right--#{$name} { margin-right: $size !important; }
+    .u-margin-bottom--#{$name} { margin-bottom: $size !important; }
+    .u-margin-left--#{$name} { margin-left: $size !important; }
+    
+    .u-padding-top--#{$name} { padding-top: $size !important; }
+    .u-padding-right--#{$name} { padding-right: $size !important; }
+    .u-padding-bottom--#{$name} { padding-bottom: $size !important; }
+    .u-padding-left--#{$name} { padding-left: $size !important; }
+}

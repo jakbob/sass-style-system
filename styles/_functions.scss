@@ -7,3 +7,16 @@
     @return map-get($colors, $colorName);
 }
 
+@function app-spacing($sizeName) {
+    @if not(map-has-key($spacings, $sizeName)) {
+        @warn "Spacing #{$sizeName} is invalid";
+    }
+    @return map-get($spacings, $sizeName);
+}
+
+@function app-font-size($sizeName) {
+    @if not(map-has-key($font-sizes, $sizeName)) {
+        @warn "Font size #{$sizeName} is invalid";
+    }
+    @return map-get($font-sizes, $sizeName);
+}

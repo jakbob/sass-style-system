@@ -5,13 +5,15 @@
 body {
     font-family: sans-serif;
     color: app-color(text);
+    font-size: app-font-size(normal);
+    padding: app-spacing(small);
 }
 
 .color-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: 200px;
+    grid-template-rows: repeat(auto-fill, minmax(80px, 1fr));
+    grid-auto-rows: 80px;
 }
 
 .color-grid--color {
@@ -19,4 +21,16 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 2rem;
+}
+
+.font-size-container {
+    > * {
+      margin-bottom: app-spacing(small);  
+    }
+}
+
+.spacing-example {
+    border: 1px solid app-color(dark);
+    background: app-color(light);
+    text-decoration: underline;
 }
