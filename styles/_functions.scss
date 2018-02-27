@@ -1,5 +1,9 @@
 @import "variables"; 
 
 @function app-color($colorName) {
+    @if not(map-has-key($colors, $colorName)) {
+        @warn "Color #{$colorName} is invalid";
+    }
     @return map-get($colors, $colorName);
 }
+
