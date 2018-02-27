@@ -1,0 +1,19 @@
+@import "../node_modules/normalize-scss/sass/normalize/_import-now.scss";
+
+body {
+    font-family: sans-serif;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+}
+
+.color-grid--color {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}

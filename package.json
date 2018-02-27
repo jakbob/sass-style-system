@@ -11,7 +11,8 @@
   },
   "scripts": {
     "build": "node-sass --output build --source-map true styles",
-    "watch": "npm run build -- --watch"
+    "watch": "npm run build -- --watch",
+    "start": "npm run watch"
   },
   "repository": {
     "type": "git",

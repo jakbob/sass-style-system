@@ -1,7 +1,3 @@
-@import "../node_modules/normalize-scss/sass/normalize/_import-now.scss";
 
-body {
-    background: red;
-    color: rebeccapurple;
-    font-family: sans-serif;
-}
+@import "variables";
+@import "utilities";

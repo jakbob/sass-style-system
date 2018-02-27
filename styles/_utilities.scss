@@ -1,0 +1,5 @@
+@import "variables";
+
+@each $name, $color in $colors {
+    .u-color--#{$name} { color: $color !important; }
+}
