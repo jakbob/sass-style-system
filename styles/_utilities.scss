@@ -19,3 +19,10 @@
     .u-padding-bottom--#{$name} { padding-bottom: $size !important; }
     .u-padding-left--#{$name} { padding-left: $size !important; }
 }
+
+@each $name, $size in $icon-sizes {
+    .u-icon-size--#{$name} { 
+        width: $size !important;
+        height: $size; 
+    }
+}

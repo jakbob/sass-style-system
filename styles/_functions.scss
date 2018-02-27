@@ -20,3 +20,10 @@
     }
     @return map-get($font-sizes, $sizeName);
 }
+
+@function app-icon-size() {
+    @if not(map-has-key($icon-sizes, $sizeName)) {
+        @warn "Icon size #{$sizeName} is invalid";
+    }
+    @return map-get($icon-sizes, $sizeName);
+}
