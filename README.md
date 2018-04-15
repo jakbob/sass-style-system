@@ -1,4 +1,4 @@
-# Sass Starter
+# Sass Style System
 
 A starting point for building for building a consistent Sass framework, using the power of Sass-maps.
 
